@@ -7,7 +7,7 @@ This Admin Panel includes one Dashboard, Three Pages, Four Apps, and Seven fully
 ![Screenshot (315)](https://user-images.githubusercontent.com/105142693/212274285-7a59661a-a563-433b-b36d-0873252370fd.png)
 
 
-<img width="320" alt="Dashboard" src="https://user-images.githubusercontent.com/105142693/212263929-cb230041-8a94-4ef8-9d43-9545685c7e09.png">
+<img width="800" alt="Dashboard" src="https://user-images.githubusercontent.com/105142693/212263929-cb230041-8a94-4ef8-9d43-9545685c7e09.png">
 
 Introduction
 
