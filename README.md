@@ -1,7 +1,12 @@
 
 # Build and Deploy a React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and More...
 
-# This Admin Panel includes one Dashboard, Three Pages, Four Apps, and Seven fully functional charts!
+This Admin Panel includes one Dashboard, Three Pages, Four Apps, and Seven fully functional charts! ⭐
+
+# Survey Management with Admin Panel ⭐
+# Internship Project
+# Web Development Intern 
+# Golden Projects
 
 
 ![Screenshot (313)](https://user-images.githubusercontent.com/105142693/212274273-9a4273ff-3f91-4547-810b-8bf55d4ac617.png)
