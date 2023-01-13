@@ -1,1 +1,17 @@
-# Admin-Panel
+# Build and Deploy a React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and More
+This Admin Panel includes one Dashboard, Three Pages, Four Apps, and Seven fully functional charts!
+
+
+<img width="320" alt="Dashboard" src="https://user-images.githubusercontent.com/105142693/212263929-cb230041-8a94-4ef8-9d43-9545685c7e09.png">
+
+
+Introduction
+
+This is a code repository all code here . 
+
+
+In today’s world, every online program interface (mainly e-commerce platforms) contains a page where information and data about customers, clients, and consumers is shown or monitored. This information/data could be based on purchases, financial transactions, or consumer service statistics. An Admin Dashboard is a visual representation of your whole data set. While it can be used in various ways, its primary function is to allow quick access to information, such as APIs. An Admin Dashboard is often shown on its own website and receives data from a linked database.
+So, today, we’ll develop a responsive and interactive Admin Dashboard using the well-known React JavaScript framework, plus the Material UI and Rechart libraries .
+
+React.js
+React is one of the most popular web frontend libraries in the world, hitting almost 30 million downloads every month according to the NPM trends tracker. It is a declarative and component-based library, making use of the so-called state to propagate changes throughout the components of your application.
