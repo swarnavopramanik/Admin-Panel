@@ -9,8 +9,6 @@ https://vimeo.com/787277546
 
 ![Screenshot (313)](https://user-images.githubusercontent.com/105142693/212274273-9a4273ff-3f91-4547-810b-8bf55d4ac617.png)
 ![Screenshot (314)](https://user-images.githubusercontent.com/105142693/212274282-050b40be-eea4-45a4-9561-50092b249931.png)
-![Screenshot (315)](https://user-images.githubusercontent.com/105142693/212274285-7a59661a-a563-433b-b36d-0873252370fd.png)
-![Screenshot (316)](https://user-images.githubusercontent.com/105142693/212274893-7d61f671-6f86-4278-b620-468fde04ab85.png)
 
 
 Introduction
