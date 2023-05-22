@@ -35,20 +35,22 @@ const UserProfile = () => {
       </div>
       <div>
         {userProfileData.map((item, index) => (
-          <div key={index} className="flex gap-5 border-b-1 border-color p-4 hover:bg-light-gray cursor-pointer  dark:hover:bg-[#42464D]">
-            <button
-              type="button"
-              style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-              className=" text-xl rounded-lg p-3 hover:bg-light-gray"
-            >
-              {item.icon}
-            </button>
+          <a href={item.url}>
+            <div key={index} className="flex gap-5 border-b-1 border-color p-4 hover:bg-light-gray cursor-pointer  dark:hover:bg-[#42464D]">
+              <button
+                type="button"
+                style={{ color: item.iconColor, backgroundColor: item.iconBg }}
+                className=" text-xl rounded-lg p-3 hover:bg-light-gray"
+              >
+                {item.icon}
+              </button>
 
-            <div>
-              <p className="font-semibold dark:text-gray-200 ">{item.title}</p>
-              <p className="text-gray-500 text-sm dark:text-gray-400"> {item.desc} </p>
+              <div>
+                <p className="font-semibold dark:text-gray-200 ">{item.title}</p>
+                <p className="text-gray-500 text-sm dark:text-gray-400"> {item.desc} </p>
+              </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
       <div className="mt-5">

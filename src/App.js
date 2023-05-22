@@ -8,6 +8,7 @@ import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Ka
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
+import Inbox from './pages/Inbox';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -89,6 +90,8 @@ const App = () => {
                 <Route path="/pyramid" element={<Pyramid />} />
                 <Route path="/stacked" element={<Stacked />} />
 
+                {/* user profile  */}
+                <Route path="/inbox" element={<Inbox />} />
               </Routes>
             </div>
             <Footer />
