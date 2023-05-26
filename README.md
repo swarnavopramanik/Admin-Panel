@@ -22,7 +22,7 @@ With Theming, Tables, Charts, Calendar, Kanban and More...</h2>
  
  # This project is a part of the following Open Source Program!
 
-[68747470733a2f2f692e706f7374696d672e63632f6b34306e747356342f31353030783530302e6a7067](https://github.com/swarnavopramanik/Admin-Panel/assets/105142693/2edb07b0-6e0c-435f-af6a-be1b8d2dd1b2)
+![68747470733a2f2f692e706f7374696d672e63632f6b34306e747356342f31353030783530302e6a7067](https://github.com/swarnavopramanik/Admin-Panel/assets/105142693/616d98cc-f83f-4ae0-81f4-90056fe78390)
 
 ## 🚀 About 
 This Admin Panel includes one Dashboard, Three Pages, Four Apps, and Seven fully functional charts! ⭐
