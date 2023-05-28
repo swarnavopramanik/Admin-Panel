@@ -13,6 +13,7 @@
     "@syncfusion/ej2-react-popups": "^19.4.53",
     "@syncfusion/ej2-react-richtexteditor": "^19.4.56",
     "@syncfusion/ej2-react-schedule": "^19.4.55",
+    "emailjs-com": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.7.1",
