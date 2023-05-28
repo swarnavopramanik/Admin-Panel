@@ -6,19 +6,19 @@ const Feedback = () => {
   const [submitted, setSubmitted] = useState(false);
   const [email, setEmail] = useState('');
 
-  emailjs.init('YOUR_USER_ID');
+  emailjs.init('1AkXF-PC-6FG2Ym15');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const templateParams = {
-      feedback: feedback,
+      feedback,
       from_email: email,
       to_email: 'swarnavo.pramanik8697@gmail.com',
     };
 
     emailjs
-      .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+      .send('service_c8wox7q', 'template_47lh3vm', templateParams, '1AkXF-PC-6FG2Ym15')
       .then((response) => {
         console.log('Feedback sent!', response.status, response.text);
         setSubmitted(true);
@@ -45,7 +45,7 @@ const Feedback = () => {
           }}
           value={feedback}
           onChange={(e) => setFeedback(e.target.value)}
-        ></textarea>
+        />
         <input
           name="email"
           style={{
