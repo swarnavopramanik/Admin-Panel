@@ -9,7 +9,6 @@ ReactDOM.render(
   <React.StrictMode>
     <ContextProvider>
       <App />
-      <Feedback />
     </ContextProvider>
   </React.StrictMode>,
   document.getElementById('root'),

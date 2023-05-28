@@ -40,7 +40,6 @@ const App = () => {
               >
                 <FiSettings />
               </button>
-
             </TooltipComponent>
           </div>
           {activeMenu ? (
@@ -63,29 +62,29 @@ const App = () => {
               <Navbar />
             </div>
             <div className="feedback-section">
-              <Feedback/>
+              <Feedback />
             </div>
 
             <div>
               {themeSettings && (<ThemeSettings />)}
 
               <Routes>
-                {/* dashboard  */}
-                <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/ecommerce" element={(<Ecommerce />)} />
+                {/* dashboard */}
+                <Route path="/" element={<Ecommerce />} />
+                <Route path="/ecommerce" element={<Ecommerce />} />
 
-                {/* pages  */}
+                {/* pages */}
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/customers" element={<Customers />} />
 
-                {/* apps  */}
+                {/* apps */}
                 <Route path="/kanban" element={<Kanban />} />
                 <Route path="/editor" element={<Editor />} />
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/color-picker" element={<ColorPicker />} />
 
-                {/* charts  */}
+                {/* charts */}
                 <Route path="/line" element={<Line />} />
                 <Route path="/area" element={<Area />} />
                 <Route path="/bar" element={<Bar />} />
@@ -95,7 +94,7 @@ const App = () => {
                 <Route path="/pyramid" element={<Pyramid />} />
                 <Route path="/stacked" element={<Stacked />} />
 
-                {/* user profile  */}
+                {/* user profile */}
                 <Route path="/inbox" element={<Inbox />} />
               </Routes>
             </div>
