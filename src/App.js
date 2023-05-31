@@ -10,6 +10,7 @@ import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
 import Inbox from './pages/Inbox';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -98,6 +99,9 @@ const App = () => {
                 {/* user profile  */}
                 <Route path="/inbox" element={<Inbox />} />
               </Routes>
+
+              <ScrollToTop/>
+
             </div>
             <Footer />
           </div>
