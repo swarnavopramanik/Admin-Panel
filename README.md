@@ -118,6 +118,11 @@ git push origin branch_name
 5. Run `npm start` to start the application
 6. Visit [http://localhost:3000](http://localhost:3000) to view the application
 
+### Tech Stack Used
+
+![reactjs](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 
 #### React.js
 React is one of the most popular web frontend libraries in the world, hitting almost 30 million downloads every month according to the NPM trends tracker. It is a declarative and component-based library, making use of the so-called state to propagate changes throughout the components of your application.
