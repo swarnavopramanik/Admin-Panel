@@ -1,18 +1,47 @@
-import React, { useEffect } from 'react';
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-quotes */
+/* eslint-disable react/jsx-indent */
+
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import Feedback from './components/Feedback';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+import {
+  Ecommerce,
+  Orders,
+  Calendar,
+  Employees,
+  Stacked,
+  Pyramid,
+  Customers,
+  Kanban,
+  Line,
+  Area,
+  Bar,
+  Pie,
+  Financial,
+  ColorPicker,
+  ColorMapping,
+  Editor,
+} from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
 import Inbox from './pages/Inbox';
 
 const App = () => {
-  const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
+  const {
+    setCurrentColor,
+    setCurrentMode,
+    currentMode,
+    activeMenu,
+    currentColor,
+    themeSettings,
+    setThemeSettings,
+  } = useStateContext();
 
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
@@ -23,15 +52,39 @@ const App = () => {
     }
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
-            <TooltipComponent
-              content="Settings"
-              position="Top"
+            <button
+              className=" mb-5 shadow-xl p-3 text-white hover:drop-shadow-xl hover:bg-light-gray "
+              style={{ background: currentColor, borderRadius: '50%' }}
+              onClick={scrollToTop}
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
+                />
+              </svg>
+            </button>
+
+            <TooltipComponent content="Settings" position="Top">
               <button
                 type="button"
                 onClick={() => setThemeSettings(true)}
@@ -40,7 +93,6 @@ const App = () => {
               >
                 <FiSettings />
               </button>
-
             </TooltipComponent>
           </div>
           {activeMenu ? (
@@ -63,16 +115,16 @@ const App = () => {
               <Navbar />
             </div>
             <div className="feedback-section">
-              <Feedback/>
+              <Feedback />
             </div>
 
             <div>
-              {themeSettings && (<ThemeSettings />)}
+              {themeSettings && <ThemeSettings />}
 
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/ecommerce" element={(<Ecommerce />)} />
+                <Route path="/" element={<Ecommerce />} />
+                <Route path="/ecommerce" element={<Ecommerce />} />
 
                 {/* pages  */}
                 <Route path="/orders" element={<Orders />} />
