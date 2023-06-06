@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
+import Feed from './pages/Feed';
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import Feedback from './components/Feedback';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
@@ -63,9 +63,9 @@ const App = () => {
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
               <Navbar />
             </div>
-            <div className="feedback-section">
+            {/* <div className="feedback-section">
               <Feedback/>
-            </div>
+            </div> */}
 
             <div>
               {themeSettings && (<ThemeSettings />)}
@@ -98,6 +98,8 @@ const App = () => {
 
                 {/* user profile  */}
                 <Route path="/inbox" element={<Inbox />} />
+                {/* Feedback form */}
+                <Route path="/feedback" element={<Feed />} />
               </Routes>
 
               <ScrollToTop/>
