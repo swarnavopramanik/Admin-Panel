@@ -1,17 +1,20 @@
-export { default as Ecommerce } from './Ecommerce';
-export { default as Kanban } from './Kanban';
-export { default as Orders } from './Orders';
-export { default as Employees } from './Employees';
-export { default as Editor } from './Editor';
-export { default as Customers } from './Customers';
-export { default as ColorPicker } from './ColorPicker';
-export { default as Calendar } from './Calendar';
-export { default as Area } from './Charts/Area';
-export { default as Bar } from './Charts/Bar';
-export { default as ColorMapping } from './Charts/ColorMapping';
-export { default as Financial } from './Charts/Financial';
-export { default as Line } from './Charts/Line';
-export { default as Pie } from './Charts/Pie';
-export { default as Pyramid } from './Charts/Pyramid';
-export { default as Stacked } from './Charts/Stacked';
+import {lazy} from 'react';
 
+const Ecommerce = lazy(() => import("./Ecommerce"));
+const Kanban = lazy(() => import("./Kanban"));
+const Orders = lazy(() => import("./Orders"));
+const Employees = lazy(() => import("./Employees"));
+const Editor = lazy(() => import("./Editor"));
+const Customers = lazy(() => import("./Customers"));
+const ColorPicker = lazy(() => import("./ColorPicker"));
+const Calendar = lazy(() => import("./Calendar"));
+const Area = lazy(() => import("./Charts/Area"));
+const Bar = lazy(() => import("./Charts/Bar"));
+const ColorMapping = lazy(() => import("./Charts/ColorMapping"));
+const Financial = lazy(() => import("./Charts/Financial"));
+const Line = lazy(() => import("./Charts/Line"));
+const Pie = lazy(() => import("./Charts/Pie"));
+const Pyramid = lazy(() => import("./Charts/Pyramid"));
+const Stacked = lazy(() => import("./Charts/Stacked"));
+ 
+export {Ecommerce,Kanban,Orders,Employees,Editor,Customers,ColorPicker,Calendar,Area,Bar,ColorMapping,Financial,Line,Pie,Pyramid,Stacked};

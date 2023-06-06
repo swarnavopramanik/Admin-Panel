@@ -2,13 +2,12 @@
 /* eslint-disable jsx-quotes */
 /* eslint-disable react/jsx-indent */
 
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import Feedback from './components/Feedback';
+import { Navbar, Footer, Sidebar, ThemeSettings,Loading,Feedback } from './components';
 import {
   Ecommerce,
   Orders,
@@ -62,6 +61,7 @@ const App = () => {
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
+      <Suspense fallback={<Loading/>}>
         <div className="flex relative dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <button
@@ -158,6 +158,8 @@ const App = () => {
             <Footer />
           </div>
         </div>
+      <Feedback />
+        </Suspense>
       </BrowserRouter>
     </div>
   );
