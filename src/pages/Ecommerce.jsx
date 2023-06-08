@@ -1,10 +1,10 @@
-import React from "react";
-import { BsCurrencyDollar } from "react-icons/bs";
-import { GoPrimitiveDot } from "react-icons/go";
-import { IoIosMore } from "react-icons/io";
-import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
+import React from 'react';
+import { BsCurrencyDollar } from 'react-icons/bs';
+import { GoPrimitiveDot } from 'react-icons/go';
+import { IoIosMore } from 'react-icons/io';
+import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 
-import { Stacked, Pie, Button, LineChart, SparkLine } from "../components";
+import { Stacked, Pie, Button, LineChart, SparkLine } from '../components';
 import {
   earningData,
   medicalproBranding,
@@ -13,16 +13,16 @@ import {
   dropdownData,
   SparklineAreaData,
   ecomPieChartData,
-} from "../data/dummy";
-import { useStateContext } from "../contexts/ContextProvider";
-import product9 from "../data/product9.jpg";
+} from '../data/dummy';
+import { useStateContext } from '../contexts/ContextProvider';
+import product9 from '../data/product9.jpg';
 
 const DropDown = ({ currentMode }) => (
   <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
     <DropDownListComponent
       id="time"
-      fields={{ text: "Time", value: "Id" }}
-      style={{ border: "none", color: currentMode === "Dark" && "white" }}
+      fields={{ text: 'Time', value: 'Id' }}
+      style={{ border: 'none', color: currentMode === 'Dark' && 'white' }}
       value="1"
       dataSource={dropdownData}
       popupHeight="220px"
@@ -75,7 +75,7 @@ const Ecommerce = () => {
               </button>
               <p className="mt-3">
                 <span className="text-lg font-semibold">${item.amount}</span>
-                <span className={`text-sm text-{item.pcColor} ml-2`}>
+                <span className="text-sm text-{item.pcColor} ml-2">
                   {item.percentage}
                 </span>
               </p>
@@ -216,7 +216,7 @@ const Ecommerce = () => {
                     <p className="text-sm text-gray-400">{item.desc}</p>
                   </div>
                 </div>
-                <p className={`text-{item.pcColor}`}>${item.amount}</p>
+                <p className="text-{item.pcColor}">${item.amount}</p>
               </div>
             ))}
           </div>
@@ -276,7 +276,7 @@ const Ecommerce = () => {
                   </div>
                 </div>
 
-                <p className={`text-{item.pcColor}`}>${item.amount}</p>
+                <p className="text-{item.pcColor}">${item.amount}</p>
               </div>
             ))}
             <div className="mt-4">
