@@ -5,7 +5,6 @@ Provide information about the issue or bug that is being addressed.
 
 Closes: #[issue number]
 
-
 ## Description of Changes
 <!-- 
 Clearly and concisely describe the modifications made to successfully resolve the assigned issue. Include any pertinent information about new files or any other relevant details.
@@ -16,7 +15,7 @@ For example:
 - Refactored code in the DEF class for improved performance.
 -->
 
-## Checklist:
+## Checklist
 
 <!--
 Mark the checkboxes to indicate completion. Example: 
@@ -29,12 +28,10 @@ Mark the checkboxes to indicate completion. Example:
 - [ ] I have made corresponding updates to the project documentation.
 - [ ] My changes have not introduced any new warnings.
 
-
 ## Screenshots
 
 |      Original       |       Updated        |
 | :-----------------: | :------------------: |
 | ![Original screenshot](link) | ![Updated screenshot](link) |
-
 
 Please provide any necessary screenshots to illustrate the changes made.
