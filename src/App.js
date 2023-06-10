@@ -62,10 +62,10 @@ const App = () => {
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
       <Suspense fallback={<Loading/>}>
-        <div className="flex relative dark:bg-main-dark-bg">
+        <div className="relative flex dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <button
-              className=" mb-5 shadow-xl p-3 text-white hover:drop-shadow-xl hover:bg-light-gray "
+              className="p-3 mb-5 text-white shadow-xl hover:drop-shadow-xl hover:bg-light-gray"
               style={{ background: currentColor, borderRadius: '50%' }}
               onClick={scrollToTop}
             >
@@ -90,14 +90,14 @@ const App = () => {
                 type="button"
                 onClick={() => setThemeSettings(true)}
                 style={{ background: currentColor, borderRadius: '50%' }}
-                className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
+                className="p-3 text-3xl text-white hover:drop-shadow-xl hover:bg-light-gray"
               >
                 <FiSettings />
               </button>
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
+            <div className="fixed bg-white w-72 sidebar dark:bg-secondary-dark-bg ">
               <Sidebar />
             </div>
           ) : (
@@ -112,12 +112,10 @@ const App = () => {
                 : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
             }
           >
-            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
+            <div className="fixed w-full md:static bg-main-bg dark:bg-main-dark-bg navbar ">
               <Navbar />
             </div>
-            <div className="feedback-section">
-              <Feedback />
-            </div>
+            
 
             <div>
               {themeSettings && <ThemeSettings />}
@@ -147,6 +145,9 @@ const App = () => {
                 <Route path="/color-mapping" element={<ColorMapping />} />
                 <Route path="/pyramid" element={<Pyramid />} />
                 <Route path="/stacked" element={<Stacked />} />
+                  
+                {/*Feedback*/}  
+                <Route path="/feedback" element={<Feedback />} />
 
                 {/* user profile  */}
                 <Route path="/inbox" element={<Inbox />} />
@@ -158,7 +159,7 @@ const App = () => {
             <Footer />
           </div>
         </div>
-      <Feedback />
+     
         </Suspense>
       </BrowserRouter>
     </div>
