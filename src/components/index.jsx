@@ -15,4 +15,4 @@ export { default as Pie } from './Charts/Pie';
 export { default as ChartsHeader } from './ChartsHeader';
 export { default as Header } from './Header';
 export { default as Loading } from './Loading';
-export { default as Feedback } from '../pages/Feedback';
+export { default as Feedback } from './Feedback';
