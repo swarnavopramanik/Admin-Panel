@@ -30,7 +30,7 @@ const Feedback = () => {
   return (
 
     <div>
-      <form onSubmit={handleSubmit} style={{ width: "80%", margin: "auto" }}>
+      <form onSubmit={handleSubmit} style={{ width: '80%', margin: 'auto' }}>
         <textarea
           placeholder="enter your feedback"
           style={{ border: '2px solid #ccc', boxSizing: 'border-box', borderRadius: '4px', resize: 'none', width: '50%', height: '100px' }}
@@ -38,7 +38,8 @@ const Feedback = () => {
           onChange={(e) => setFeedBack(e.target.value)}
         />
         <input
-          name="email" type="email"
+          name="email"
+          type="email"
           style={{ display: 'flex', alignItems: 'right', border: '2px solid #ccc', width: '50%', height: '50px', borderRadius: '4px' }}
           placeholder="enter your email"
           value={email}
@@ -49,7 +50,7 @@ const Feedback = () => {
       </form>
       {submitted && (
         <div>
-          <p style={{ width: "80%", margin: "auto", padding: "2px" }}>Sent!</p>
+          <p style={{ width: '80%', margin: 'auto', padding: '2px' }}>Sent!</p>
         </div>
       )}
     </div>
