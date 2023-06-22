@@ -155,8 +155,8 @@ const App = () => {
                 <ScrollToTop />
 
               </div>
-              <Footer />
               <Feedback />
+              <Footer />
             </div>
 
           </div>
