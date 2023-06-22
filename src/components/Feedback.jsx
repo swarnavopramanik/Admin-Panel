@@ -30,10 +30,11 @@ const Feedback = () => {
   return (
 
     <div>
-      <form onSubmit={handleSubmit} style={{ width: "80%", margin: "auto" }}>
+      <form onSubmit={handleSubmit} style={{width: "80%",display: "flex", "justify-content": "center", "flex-direction": "column", margin: "auto", "align-items": "center",padding: ".2rem"
+    }}>
         <textarea
           placeholder="enter your feedback"
-          style={{ border: '2px solid #ccc', boxSizing: 'border-box', borderRadius: '4px', resize: 'none', width: '50%', height: '100px' }}
+          style={{ border: '2px solid #ccc', boxSizing: 'border-box', borderRadius: '4px', resize: 'none', width: '50%', height: '100px' , margin:"1rem"}}
           value={feedback}
           onChange={(e) => setFeedBack(e.target.value)}
         />
