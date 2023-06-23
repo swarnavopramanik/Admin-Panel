@@ -30,27 +30,35 @@ const Feedback = () => {
   return (
 
     <div>
+
       <form onSubmit={handleSubmit} style={{width: "80%",display: "flex", "justify-content": "center", "flex-direction": "column", margin: "auto", "align-items": "center",padding: ".2rem"
     }}>
         <textarea
           placeholder="enter your feedback"
           style={{ border: '2px solid #ccc', boxSizing: 'border-box', borderRadius: '4px', resize: 'none', width: '50%', height: '100px' , margin:"1rem"}}
+
+      <form onSubmit={handleSubmit} style={{ width: '80%', margin: 'auto' }}>
+        <textarea
+          placeholder="Enter your feedback"
+          className="border border-gray-300 rounded-md resize-none w-1/2 h-24 p-5 text-gray-500 dark:text-gray-100 dark:bg-[#484B52]"
+
           value={feedback}
           onChange={(e) => setFeedBack(e.target.value)}
         />
         <input
-          name="email" type="email"
-          style={{ display: 'flex', alignItems: 'right', border: '2px solid #ccc', width: '50%', height: '50px', borderRadius: '4px' }}
-          placeholder="enter your email"
+          name="email"
+          type="email"
+          className="flex items-end border border-gray-300 w-1/2 h-12 rounded-md p-5 text-gray-500 dark:text-gray-100 dark:bg-[#484B52]"
+          placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <button type="submit" onClick={handleSubmit} style={{ borderRadius: '4px', border: '1px solid #ccc', height: '40px', width: '100px', marginTop: '30px' }}>Submit</button>
+        <button type="submit" onClick={handleSubmit} className="border border-gray-300 rounded-md h-10 w-24 mt-8 bg-[#03c9d7] text-gray-100" bgHoverColor="light-gray">Submit</button>
       </form>
       {submitted && (
         <div>
-          <p style={{ width: "80%", margin: "auto", padding: "2px" }}>Sent!</p>
+          <p className="w-80 mx-auto p-2">Sent!</p>
         </div>
       )}
     </div>
