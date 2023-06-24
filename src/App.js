@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { Navbar, Footer, Sidebar, ThemeSettings, Loading, Feedback } from './components';
+import { Navbar, Footer, Sidebar, ThemeSettings, Loading } from './components';
 import {
   Ecommerce,
   Orders,
@@ -30,7 +30,6 @@ import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
 import Inbox from './pages/Inbox';
-import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   const {
@@ -115,9 +114,6 @@ const App = () => {
               <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
                 <Navbar />
               </div>
-              <div className="feedback-section">
-                <Feedback />
-              </div>
 
               <div>
                 {themeSettings && <ThemeSettings />}
@@ -152,10 +148,7 @@ const App = () => {
                   <Route path="/inbox" element={<Inbox />} />
                 </Routes>
 
-                <ScrollToTop />
-
               </div>
-              <Feedback />
               <Footer />
             </div>
 
