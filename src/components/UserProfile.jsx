@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
-
 import { Button } from '.';
+import { AuthContext } from '../contexts/AuthContext';
+import { logoutCall } from '../pages/apiCalls';
 import { userProfileData } from '../data/dummy';
-import { useStateContext } from '../contexts/ContextProvider';
 import avatar from '../data/avatar.jpg';
 
 const UserProfile = () => {
-  const { currentColor } = useStateContext();
-
+  const { dispatch } = useContext(AuthContext);
   return (
     <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
       <div className="flex justify-between items-center">
@@ -54,13 +53,18 @@ const UserProfile = () => {
         ))}
       </div>
       <div className="mt-5">
-        <Button
-          color="white"
-          bgColor={currentColor}
-          text="Logout"
-          borderRadius="10px"
-          width="full"
-        />
+        <div className="flex justify-center">
+          <button
+            type="button"
+            className="text-2rem p-3 w-4rem text-xl text-white bg-cyan-400 rounded-lg  hover:drop-shadow-xl hover:bg-cyan-500 ring-offset-2 ring-2"
+            onClick={() => {
+              logoutCall(dispatch);
+            }}
+          >
+            Logout
+          </button>
+        </div>
+
       </div>
     </div>
 
