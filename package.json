@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "@syncfusion/ej2": "^19.4.56",
     "@syncfusion/ej2-react-calendars": "^19.4.56",
     "@syncfusion/ej2-react-charts": "^19.4.54",
@@ -13,12 +14,19 @@
     "@syncfusion/ej2-react-popups": "^19.4.53",
     "@syncfusion/ej2-react-richtexteditor": "^19.4.56",
     "@syncfusion/ej2-react-schedule": "^19.4.55",
+    "axios": "^1.4.0",
+    "browserify-zlib": "^0.2.0",
     "emailjs-com": "^3.2.0",
+    "https-browserify": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.1",
-    "react-scripts": "^5.0.0"
+    "react-scripts": "^5.0.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.1",
+    "util": "^0.12.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -54,5 +62,9 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.19"
-  }
+  },
+  "description": "<h1 align=\"center\">Admin Panel 📊</h1>",
+  "main": ".eslintrc.js",
+  "author": "",
+  "license": "ISC"
 }
