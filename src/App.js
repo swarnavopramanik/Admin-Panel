@@ -1,12 +1,12 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-quotes */
 /* eslint-disable react/jsx-indent */
-
-import React, { Suspense, useEffect } from 'react';
+import React, { Suspense, useContext, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
+import { useStateContext } from './contexts/ContextProvider';
+import { AuthContext } from './contexts/AuthContext';
 import { Navbar, Footer, Sidebar, ThemeSettings, Loading } from './components';
 import {
   Ecommerce,
@@ -25,10 +25,11 @@ import {
   ColorPicker,
   ColorMapping,
   Editor,
+  Login,
+  Register,
 } from './pages';
 import './App.css';
 
-import { useStateContext } from './contexts/ContextProvider';
 import Inbox from './pages/Inbox';
 
 const App = () => {
@@ -41,7 +42,7 @@ const App = () => {
     themeSettings,
     setThemeSettings,
   } = useStateContext();
-
+  const { user } = useContext(AuthContext);
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
     const currentThemeMode = localStorage.getItem('themeMode');
@@ -119,6 +120,9 @@ const App = () => {
                 {themeSettings && <ThemeSettings />}
 
                 <Routes>
+                  {/* Login and Signup */}
+                <Route path="/login" element={!user ? <Login /> : <Ecommerce />} />
+                <Route path="/register" element={!user ? <Register /> : <Ecommerce />} />
                   {/* dashboard  */}
                   <Route path="/" element={<Ecommerce />} />
                   <Route path="/ecommerce" element={<Ecommerce />} />

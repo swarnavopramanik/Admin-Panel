@@ -16,5 +16,7 @@ const Line = lazy(() => import('./Charts/Line'));
 const Pie = lazy(() => import('./Charts/Pie'));
 const Pyramid = lazy(() => import('./Charts/Pyramid'));
 const Stacked = lazy(() => import('./Charts/Stacked'));
+const Login = lazy(() => import('./Login'));
+const Register = lazy(() => import('./Register'));
 
-export { Ecommerce, Kanban, Orders, Employees, Editor, Customers, ColorPicker, Calendar, Area, Bar, ColorMapping, Financial, Line, Pie, Pyramid, Stacked };
+export { Ecommerce, Kanban, Orders, Employees, Editor, Customers, ColorPicker, Calendar, Area, Bar, ColorMapping, Financial, Line, Pie, Pyramid, Stacked, Login, Register };
