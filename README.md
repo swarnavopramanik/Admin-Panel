@@ -19,11 +19,8 @@ With Theming, Tables, Charts, Calendar, Kanban and More...</h2>
       <img src="https://img.shields.io/github/issues-pr-closed/DevFeed404/DevFeed-1.0?style=for-the-badge" />
       <img src="https://img.shields.io/github/last-commit/DevFeed404/DevFeed-1.0?style=for-the-badge" />
  </div>
+
  
- # This project is a part of the following Open Source Program!
-
-![68747470733a2f2f692e706f7374696d672e63632f6b34306e747356342f31353030783530302e6a7067](https://github.com/swarnavopramanik/Admin-Panel/assets/105142693/616d98cc-f83f-4ae0-81f4-90056fe78390)
-
 ## 🚀 About 
 This Admin Panel includes one Dashboard, Three Pages, Four Apps, and Seven fully functional charts! ⭐
 
